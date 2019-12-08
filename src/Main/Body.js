@@ -6,7 +6,7 @@ export default function Body(props) {
         props.handleFavoritesChanged(fav);
     };
 
-    const handleSessionDetailsClicked = id => ({target}) => {
+    const handleSessionDetailsClicked = id => ({ target }) => {
         // Ignore the icon
         if (!target.classList.contains("heart"))
             props.handleSessionDetailsClicked(id);
@@ -14,7 +14,7 @@ export default function Body(props) {
 
     const segmentStyle = {
         color: "white",
-        backgroundColor: "#111",        
+        backgroundColor: "#111",
         width: "100%",
         cursor: "pointer"
     }
@@ -47,9 +47,12 @@ export default function Body(props) {
                                                                     <div style={{ fontSize: "115%" }}>
                                                                         {session.title}
                                                                     </div>
-                                                                    <div style={{paddingLeft: "5px"}}>
+                                                                    <div style={{ paddingLeft: "5px" }}>
                                                                         <Icon name="heart" color={session.isFavorite ? "red" : "grey"} style={{ cursor: "pointer" }} onClick={() => { handleFavoritesChanged(session.id) }} />
                                                                     </div>
+                                                                </div>
+                                                                <div style={{ color: "#a879fd" }}>
+                                                                    {session.speaker}
                                                                 </div>
                                                                 <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "10px", alignItems: "center", color: "#21ba45" }}>
                                                                     <div>
@@ -86,9 +89,12 @@ export default function Body(props) {
                                                                     <div style={{ fontSize: "115%" }}>
                                                                         {session.title}
                                                                     </div>
-                                                                    <div style={{paddingLeft: "5px"}}>
+                                                                    <div style={{ paddingLeft: "5px" }}>
                                                                         <Icon name="heart" color={session.isFavorite ? "red" : "grey"} style={{ cursor: "pointer" }} onClick={() => { handleFavoritesChanged(session.id) }} />
                                                                     </div>
+                                                                </div>
+                                                                <div style={{ color: "#a879fd" }}>
+                                                                    {session.speaker}
                                                                 </div>
                                                                 <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "10px", alignItems: "center", color: "#21ba45" }}>
                                                                     <div>
@@ -123,9 +129,12 @@ export default function Body(props) {
                                                             <div style={{ fontSize: "115%" }}>
                                                                 {session.title}
                                                             </div>
-                                                            <div style={{paddingLeft: "5px"}}>
+                                                            <div style={{ paddingLeft: "5px" }}>
                                                                 <Icon name="heart" color={session.isFavorite ? "red" : "grey"} style={{ cursor: "pointer" }} onClick={() => { handleFavoritesChanged(session.id) }} />
                                                             </div>
+                                                        </div>
+                                                        <div style={{ color: "#a879fd" }}>
+                                                            {session.speaker}
                                                         </div>
                                                         <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "10px", alignItems: "center", color: "#21ba45" }}>
                                                             <div>
@@ -158,9 +167,12 @@ export default function Body(props) {
                                                             <div style={{ fontSize: "115%" }}>
                                                                 {session.title}
                                                             </div>
-                                                            <div style={{paddingLeft: "5px"}}>
+                                                            <div style={{ paddingLeft: "5px" }}>
                                                                 <Icon name="heart" color={session.isFavorite ? "red" : "grey"} style={{ cursor: "pointer" }} onClick={() => { handleFavoritesChanged(session.id) }} />
                                                             </div>
+                                                        </div>
+                                                        <div style={{ color: "#a879fd" }}>
+                                                            {session.speaker}
                                                         </div>
                                                         <div style={{ display: "flex", justifyContent: "space-between", paddingTop: "10px", alignItems: "center", color: "#21ba45" }}>
                                                             <div>
