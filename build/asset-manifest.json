@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/codemash2020/static/css/main.64df6dcf.chunk.css",
+    "main.js": "/codemash2020/static/js/main.b39d4789.chunk.js",
+    "main.js.map": "/codemash2020/static/js/main.b39d4789.chunk.js.map",
+    "runtime-main.js": "/codemash2020/static/js/runtime-main.09070b78.js",
+    "runtime-main.js.map": "/codemash2020/static/js/runtime-main.09070b78.js.map",
+    "static/js/2.3e0f4c1d.chunk.js": "/codemash2020/static/js/2.3e0f4c1d.chunk.js",
+    "static/js/2.3e0f4c1d.chunk.js.map": "/codemash2020/static/js/2.3e0f4c1d.chunk.js.map",
+    "index.html": "/codemash2020/index.html",
+    "precache-manifest.721874f60d8298f89eca6d76a5d54211.js": "/codemash2020/precache-manifest.721874f60d8298f89eca6d76a5d54211.js",
+    "service-worker.js": "/codemash2020/service-worker.js",
+    "static/css/main.64df6dcf.chunk.css.map": "/codemash2020/static/css/main.64df6dcf.chunk.css.map",
+    "static/media/semantic.min.css": "/codemash2020/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/codemash-logo.png": "/codemash2020/static/media/codemash-logo.89a43373.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09070b78.js",
+    "static/js/2.3e0f4c1d.chunk.js",
+    "static/css/main.64df6dcf.chunk.css",
+    "static/js/main.b39d4789.chunk.js"
+  ]
+}
