@@ -54,7 +54,7 @@ function App() {
   }
 
   const getLink = () => {    
-    navigator.clipboard.writeText(`${document.location.origin.toString()}?favs=${btoa(favorites)}`);
+    navigator.clipboard.writeText(`${document.location.origin.toString()}/codemash2020?favs=${btoa(favorites)}`);
     alert("Link copied to clipboard!");
   };
 
