@@ -67,6 +67,7 @@ export default function Header(props) {
                                             multiple
                                             selection
                                             fluid
+                                            search
                                         />
                                     </Form.Field>
                                 </Form.Group>
@@ -121,6 +122,7 @@ export default function Header(props) {
                                         multiple
                                         selection
                                         fluid
+                                        search
                                     />
                                 </Form.Field>
                             </Form.Group>

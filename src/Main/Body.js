@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Icon, Transition, Dimmer, Loader, Segment } from "semantic-ui-react";
+import { Grid, Icon, Dimmer, Loader, Segment } from "semantic-ui-react";
 
 export default function Body(props) {
     const handleFavoritesChanged = (fav) => {
