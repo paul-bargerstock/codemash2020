@@ -7,6 +7,7 @@ import Body from './Main/Body';
 import SessionModal from './Main/SessionModal';
 import axios from 'axios';
 import { format, getDay, parseISO } from 'date-fns';
+import Cookies from 'js-cookie';
 
 function App() {
 
@@ -107,10 +108,11 @@ function App() {
 
   useEffect(() => {
     const init = async () => {
+      const cookie = Cookies.get("favs");
       let favorites = [];
 
-      if (document.cookie !== "") {
-        favorites = document.cookie.split(',');
+      if (cookie) {
+        favorites = cookie.split(',');
       }
 
       if (window.location.search.includes("favs")) {
@@ -169,12 +171,13 @@ function App() {
   const handleFavoritesChanged = (sessionId, closeModal) => {
     if (favorites.some(x => x === sessionId)) {
       const newfavorites = [...favorites.filter(x => x !== sessionId)];
-      document.cookie = newfavorites;
+      
+      Cookies.set("favs", newfavorites.toString(), {expires: 30});
       setFavorites(newfavorites);
     }
     else {
       const newfavorites = [...favorites, sessionId];
-      document.cookie = newfavorites;
+      Cookies.set("favs", newfavorites.toString(), {expires: 30});
       setFavorites(newfavorites);
     }
 
